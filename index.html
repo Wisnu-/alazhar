@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<title>Yayasan Al Azhar</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="robots" content="index,follow" />
+<link rel="shortcut icon" href="images/favicon.ico" /> 
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:400,700" type="text/css" />
+<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" />
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" />
+<link rel="stylesheet" href="css/stratosfera.css" type="text/css" />
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<!--[if (gte IE 6)&(lte IE 8)]>
+<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script type="text/javascript" src="js/selectivizr-min.js"></script>
+<link rel="stylesheet" href="css/ie_7.css" type="text/css" />
+<![endif]-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="js/slides.min.jquery.js"></script>
+<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="js/slides.min.jquery.js"></script>
+<script type="text/javascript" src="js/jquery.animate-colors-min.js"></script>
+<script type="text/javascript" src="js/jquery.backgroundPosition.js"></script>
+<script type="text/javascript" src="js/respond.min.js"></script>
+<script type="text/javascript" src="js/jquery.touchwipe.min.js"></script>
+<script type="text/javascript" src="js/misc.js"></script>
+<script type="text/javascript" src="js/responsiveslides.js"></script>
+<script type="text/javascript">
+$(function () {
+	$("#slider").responsiveSlides({
+		auto: true,
+		pager: true,
+		nav: true,
+		speed: 500,
+		namespace: "stratosfera"
+	});
+	
+	$("#slider").touchwipe({
+     	wipeLeft: function() {  $('.stratosfera1_nav.prev').trigger('click'); },
+     	wipeRight: function() { $('.stratosfera1_nav.next').trigger('click'); }
+	});
+	  
+	 $('.recent_post_slider').slides({
+		generateNextPrev: false,
+		play: 2500,
+		pause: 2500,
+		hoverPause: true,
+		autoHeight: true
+	}); 
+});
+</script>
+</head> 
+<body>
+	<!-- START HEADER -->
+	<header class="header_bg clearfix">
+		<div class="container clearfix">
+			 <!-- START LOGO -->
+			<div class="logo">
+				<a href="index.html"><img src="images/logo.png" alt="" /></a>
+			</div>
+			 <!-- END LOGO -->
+			
+			<!-- START NAVIGATION -->
+			<nav class="main-menu">
+				<ul>
+					<li>
+						<a>Profil</a>
+						<ul>
+							<li><a href="profil.html">Nama dan Status</a></li>
+							<li><a href="profil.html">Sejarah</a></li>
+							<li><a href="profil.html">Visi Misi & Tujuan</a></li>
+							<li><a href="profil.html">Susunan Pengurus</a></li>
+							<li><a href="profil.html">Struktur Yayasan</a></li>
+						</ul>
+					</li>
+					<li>
+						<a>Informasi</a>
+						<ul>
+						<li><a>Unit Pendidikan</a>
+							<ul>
+								<li><a href="#">Playgroup</a></li>
+								<li><a href="#">TK</a></li>
+								<li><a href="#">SD</a></li>
+								<li><a href="#">SMP</a></li>
+							</ul>
+						</li>
+						<li><a>Unit Usaha</a>
+							<ul>
+								<li><a href="#">Kantin</a></li>
+								<li><a href="#">Koperasi</a></li>
+								<li><a href="#">Umroh</a></li>
+							</ul>
+						</li>
+						<li><a>Unit Sosial</a>
+							<ul>
+								<li><a href="#">Panti Asuhan</a></li>
+							</ul>
+						</li>
+						</ul>
+					</li>
+					<li><a href="berita.html">Berita</a></li>
+					<li><a href="gallery.html">Galeri</a></li>
+					<li><a href="buku-tamu.html">Buku Tamu</a></li>
+					<li><a href="kontak.html">Kontak</a></li>
+				</ul>
+			</nav>
+			<!-- END NAVIGATION -->
+		</div>
+	</header>
+	<!-- END HEADER -->
+	
+	<div class="clear"></div>
+	
+	<!-- START SLIDER -->
+	<div class="container clearfix">
+		 <div class="stratosfera_container">
+			<ul id="slider">
+				<li>
+					<img src="images/slider_image_1.jpg" alt="" />
+				</li>
+				<li>
+					<img src="images/slider_image_2.jpg" alt="" />
+					<!-- START CAPTION -->
+					<p class="caption">Interactive Wireframe</p>
+					<!-- END CAPTION -->
+				</li>
+				<li>
+					<img src="images/slider_image_3.jpg" alt="" />
+					<!-- START CAPTION -->
+					<p class="caption">Bounce Store Rate</p>
+					<!-- END CAPTION -->
+				</li>
+				<li>
+					<img src="images/slider_image_4.jpg" alt="" />
+				</li>
+			</ul>
+			<!-- START SLIDER PAGINATION -->
+			
+			<!-- END SLIDER PAGINATION -->
+		</div>
+	</div>
+	<!-- END SLIDER -->
+	
+	<div class="clear padding40"></div>
+	
+	<!-- START CONTENT -->
+	<section class="container clearfix">
+
+		<div class="col_2_3">
+			
+			<div class="col_1_3">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class="col_1_3 last">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>			
+
+			<div class="clear"></div>
+			<h2>Lorem Ipsum</h2>
+			<div class="delimiter"></div>
+			<div class="col_1_3">
+			<ul>
+<li>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. 
+</li>
+			</ul>
+				<ul class="arrow_list demo">
+					<li><span style="color:#d93e39;">Arrow list icon</span> - Pellentesquet rhoncus fusciusosa
+					</li>
+				</ul>
+			</div>
+			<div class="col_1_3 last">
+				<ul class="check_list demo">
+					<li><span style="color:#d93e39;">Arrow list icon</span> - Pellentesquet rhoncus fusciusosa
+					</li>
+					<li><span style="color:#d93e39;">Arrow list icon</span> - Pellentesquet rhoncus fusciusosa
+					</li>
+					<li><span style="color:#d93e39;">Arrow list icon</span> - Pellentesquet rhoncus fusciusosa
+					</li>
+					<li><span style="color:#d93e39;">Arrow list icon</span> - Pellentesquet rhoncus fusciusosa
+					</li>
+					<li><span style="color:#d93e39;">Arrow list icon</span> - Pellentesquet rhoncus fusciusosa
+					</li>
+				</ul>
+			</div>
+
+		</div>
+		
+		
+		<!-- START SIDEBAR SIDE -->
+		<div class="sidebar">
+
+			<div class="question_box">
+				<strong>Question box</strong> - Lorem Ipsum is simply dummy.
+			</div>
+			<!-- START CATEGORIES -->
+			<div class="widget">
+				<h2><span>Categories</span></h2>
+				<div class="categories">
+				<ul>
+					<li><a href="#">Mobile & Tablet optimized</a></li>
+					<li><a href="#">Paypal Integration</a></li>
+					<li><a href="#">Unlimited Exchange Rates</a></li>
+					<li><a href="#">Full Keyword Management Control</a></li>
+					<li><a href="#" class="selected">Real Time Website Statistics</a></li>
+					<li><a href="#">Online Customer Service</a></li>
+				</ul>
+				</div>
+			</div>
+			<!-- END CATEGORIES -->
+			
+			
+			<!-- START RECENT BLOG POST -->			
+			<div class="widget">
+				<h2><span>Recent Posts</span></h2>
+				<div class="recent_post">
+					<div class="image"><img src="images/blog_thumbs_1.jpg" alt="" /></div>
+					<div class="text">
+						<a href="#" class="title">10 Steps to Small Business Marketing Success and More</a>
+						<div class="clear"></div>
+						<div class="time">March 21, 2012</div>
+						<div class="comments">10 comments</div>
+						<div class="clear"></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="recent_post">
+					<div class="image"><img src="images/blog_thumbs_2.jpg" alt="" /></div>
+					<div class="text">
+						<a href="#" class="title">The Sacramento Electronic Music Festiva in Decembre</a>
+						<div class="clear"></div>
+						<div class="time">March 21, 2012</div>
+						<div class="comments">10 comments</div>
+						<div class="clear"></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="recent_post">
+					<div class="image"><img src="images/blog_thumbs_3.jpg" alt="" /></div>
+					<div class="text">
+						<a href="#" class="title">Design Exhibition at the Swedish Embassy in Tokyo</a>
+						<div class="clear"></div>
+						<div class="time">March 21, 2012</div>
+						<div class="comments">10 comments</div>
+						<div class="clear"></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<!-- END RECENT BLOG POST -->
+
+
+		</div>
+		<!-- END SIDEBAR SIDE -->
+
+
+		
+		<div class="clear"></div>
+	
+	</section>
+	<!-- END CONTENT -->
+	
+	<!-- START FOOTER SMALL -->
+	<footer class="footer_bg_bottom clearfix">
+		<div class="footer_bottom container">
+		
+				<div class="clear padding20"></div>
+				
+				
+				<p> &copy; Al-Azhar 2015 | 
+					<a href="#">All rights reserved</a>  &nbsp;&nbsp;|&nbsp;&nbsp;  <a href="#">Privacy Policy</a>  &nbsp;&nbsp;|&nbsp;&nbsp;  <a href="#">Terms and Conditions</a>
+				</p>
+		</div>
+				<div class="clear"></div>
+	</footer>
+	<!-- END FOOTER SMALL -->
+</body>
+</html>
